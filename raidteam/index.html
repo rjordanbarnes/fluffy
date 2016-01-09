@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Fluffy Kitties</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="../styles/style.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row" id="header">
+				<div class="col-md-6 col-xs-12" id="guild-text-container">
+					<a href="/"><img src="../images/logo.png"></a>
+					<div id="guild-name">Fluffy Kitties</div>
+					<div id="guild-progress">Alliance Darkspear-US <span id="guild-progress-number"></span>/13M</div>
+				</div>
+
+				<div class="col-md-6 col-xs-12" id="nav-container">
+					<ul class="nav nav-pills">
+						<li><a href="/">Home</a></li>
+						<li class="active"><a href="/raidteam">Raid Team</a></li>
+						<li><a href="/join">Join</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row" id="content">
+				<div class="row" id="raider-container">
+					<h1 class="text-center">Mythic Raid Team</h1>
+					<p class="text-justify">Fluffy Kitties is a guild that was established in 2014 with hopes of bringing in new and experienced players alike and giving them a community where connections and life long friendships could be made.</p>
+				</div>
+				<div class="container" id="fullscreen-container">
+					<div class="row" id="fullscreen-sub-container">
+						<div class="col-md-3" id="fullscreen-description-container">
+
+							<h1 id="fullscreen-member-name"></h1>
+							<p class="text-justify" id="fullscreen-text-description"></p>
+							<div id="armory-button">
+								<a target="_blank" class="btn btn-link btn-xs btn-block">Armory</a>
+							</div>
+
+						</div>
+						<div class="col-md-9" id="fullscreen-image-container">
+							<img id="fullscreen-image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="../js/fluffykitties.js"></script>
+	<script src="../js/guildmembers.js"></script>
+	</body>
+</html>
