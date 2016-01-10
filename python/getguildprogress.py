@@ -2,7 +2,6 @@ import requests
 import re
 import json
 import time
-import os
 import logging
 
 WOWPROGRESSURL = "http://www.wowprogress.com/guild/us/darkspear/Fluffy+Kitties"
@@ -19,11 +18,9 @@ progress = re.findall(pattern, htmlText)
 data = {}
 data['progress'] = progress[0]
 
-logging.basicConfig(filename="/var/www/html/python/logs/getguildprogress.log", level=logging.INFO)
+logging.basicConfig(filename="logs/getguildprogress.log", level=logging.INFO)
 
-with open("/var/www/html/json/guildprogress.json", "w") as outfile:
-    # print(time.strftime("%b %d %Y %I:%M %p") +
-    #       " - Refreshing progress... Now " +
-    #       progress[0] + "/13")
+with open("../json/guildprogress.json", "w") as outputfile:
+    print(time.strftime("%b %d %Y %I:%M %p") + " - Refreshing progress... Now " + progress[0] + "/13")
     logging.info(time.strftime("%b %d %Y %I:%M %p") + " - Refreshing progress... Now " + progress[0] + "/13")
-    json.dump(data, outfile)
+    json.dump(data, outputfile)
