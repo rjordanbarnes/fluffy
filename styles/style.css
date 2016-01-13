@@ -489,19 +489,22 @@ small {
 
 @media (min-width: 992px) {
 	.contact-info-portrait {
-		width: 178px;
+		width: 150px;
 	}
 	#contact-us-thumbnail-container {
 		padding: 20px 80px;
+	}
+	#contact-us-container {
+	padding: 0 20px 0 0;
 	}
 }
 
 @media (min-width: 1200px) {
 	.contact-info-portrait {
-		width: 188px;
+		width: 150px;
 	}
 	#contact-us-thumbnail-container {
-		padding: 20px;
+		padding: 20px 50px;
 	}
 }
 
@@ -524,49 +527,28 @@ small {
 }
 
 .contact-name {
-	font-size: 1.1em;
+	font-size: 1.3em;
+	padding: 10px 0 0 0;
+	font-family: 'DJB Jacked Up Kinda Luv', cursive;
 }
 
 .contact-rank {
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 .contact-realid {
-	font-size: 1.1em;
-}
-
-@media (min-width: 768px) {
-	.contact-name {
-	font-size: 1.1em;
-	}
-	.contact-rank {
 	font-size: 1em;
-	}
-	.contact-realid {
-	font-size: 1.1em;
-	}
 }
 
 @media (min-width: 992px) {
 	.contact-name {
-	font-size: 1.1em;
+	font-size: 1em;
+	padding: 0;
 	}
 	.contact-rank {
-	font-size: 1em;
+	font-size: .8em;
 	}
 	.contact-realid {
-	font-size: 1.1em;
-	}
-}
-
-@media (min-width: 1200px) {
-	.contact-name {
-	font-size: 1.1em;
-	}
-	.contact-rank {
-	font-size: 1em;
-	}
-	.contact-realid {
-	font-size: 1.1em;
+	font-size: .7em;
 	}
 }
