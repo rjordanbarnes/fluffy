@@ -10,52 +10,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row" id="header">
+					<div class="col-md-2 col-xs-12" id="guild-logo-container">
+						<a href="/"><img class="img-responsive" src="/images/logo.png"></a>
+					</div>
+					<div class="col-md-4 col-xs-12" id="guild-text-container">
+						<div id="guild-name">Fluffy Kitties</div>
+						<div id="guild-progress">Alliance Darkspear-US <span id="guild-progress-number"></span>/13M</div>
+					</div>
 
-		<div class="container">
-			<div class="row" id="header">
-				<div class="col-md-2 col-xs-12" id="guild-logo-container">
-					<a href="/"><img class="img-responsive" src="/images/logo.png"></a>
-				</div>
-				<div class="col-md-4 col-xs-12" id="guild-text-container">
-					<div id="guild-name">Fluffy Kitties</div>
-					<div id="guild-progress">Alliance Darkspear-US <span id="guild-progress-number"></span>/13M</div>
+					<div class="col-md-6 col-xs-12" id="nav-container">
+						<ul class="nav nav-pills">
+							<li><a href="/">Home</a></li>
+							<li><a href="/raidteam/">Raid Team</a></li>
+							<li class="active"><a href="/join/">Join</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 
-				<div class="col-md-6 col-xs-12" id="nav-container">
-					<ul class="nav nav-pills">
-						<li><a href="/">Home</a></li>
-						<li><a href="/raidteam/">Raid Team</a></li>
-						<li class="active"><a href="/join/">Join</a></li>
-						<li><a href="/contact/">Contact</a></li>
-					</ul>
+				<div class="row" id="content">
+					<div class="col-md-6 col-md-push-3 col-sm-12" id="join-us-container">
+						<div class="text-box">
+							<h1 class="text-center">Join Us</h1>
+							<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at cursus nunc, ac porta felis. Suspendisse mattis ut metus sit amet rutrum. Maecenas ut lorem consequat, aliquam arcu a, cursus odio. Pellentesque non faucibus diam, non pellentesque orci. Aliquam libero ligula, finibus ac egestas ut, accumsan at ligula. Vestibulum at condimentum libero, sit amet cursus nisi. Phasellus sed ligula neque. Sed tempus mauris ac tellus varius euismod.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-pull-6 col-sm-6 openings-container" id="mythic-openings-container">
+						<div class="table-responsive table-box">
+							<h1 class="text-center">Mythic Openings:</h1>
+							<table class="table table-striped" id="mythic-table">
+							</table>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 openings-container" id="heroic-openings-container">
+						<div class="table-responsive table-box">
+							<h1 class="text-center">Heroic Openings:</h1>
+							<table class="table table-striped" id="heroic-table">
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="row" id="content">
-				<div class="col-md-6 col-md-push-3 col-sm-12" id="join-us-container">
-					<div class="text-box">
-						<h1 class="text-center">Join Us</h1>
-						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at cursus nunc, ac porta felis. Suspendisse mattis ut metus sit amet rutrum. Maecenas ut lorem consequat, aliquam arcu a, cursus odio. Pellentesque non faucibus diam, non pellentesque orci. Aliquam libero ligula, finibus ac egestas ut, accumsan at ligula. Vestibulum at condimentum libero, sit amet cursus nisi. Phasellus sed ligula neque. Sed tempus mauris ac tellus varius euismod.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-md-pull-6 col-sm-6 openings-container" id="mythic-openings-container">
-					<div class="table-responsive table-box">
-						<h1 class="text-center">Mythic Openings:</h1>
-						<table class="table table-striped" id="mythic-table">
-						</table>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 openings-container" id="heroic-openings-container">
-					<div class="table-responsive table-box">
-						<h1 class="text-center">Heroic Openings:</h1>
-						<table class="table table-striped" id="heroic-table">
-						</table>
-					</div>
-				</div>
-			</div>
+			<footer>
+			<a href="/phpmumbleadmin/">Admin</a>
+			</footer>
 		</div>
-
-		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/js/fluffykitties.js"></script>
 	<script src="/js/joinus.js"></script>

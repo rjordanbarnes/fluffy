@@ -10,52 +10,55 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row" id="header">
+					<div class="col-md-2 col-xs-12" id="guild-logo-container">
+						<a href="/"><img class="img-responsive" src="/images/logo.png"></a>
+					</div>
+					<div class="col-md-4 col-xs-12" id="guild-text-container">
+						<div id="guild-name">Fluffy Kitties</div>
+						<div id="guild-progress">Alliance Darkspear-US <span id="guild-progress-number"></span>/13M</div>
+					</div>
 
-		<div class="container">
-			<div class="row" id="header">
-				<div class="col-md-2 col-xs-12" id="guild-logo-container">
-					<a href="/"><img class="img-responsive" src="/images/logo.png"></a>
-				</div>
-				<div class="col-md-4 col-xs-12" id="guild-text-container">
-					<div id="guild-name">Fluffy Kitties</div>
-					<div id="guild-progress">Alliance Darkspear-US <span id="guild-progress-number"></span>/13M</div>
+					<div class="col-md-6 col-xs-12" id="nav-container">
+						<ul class="nav nav-pills">
+							<li><a href="/">Home</a></li>
+							<li class="active"><a href="/raidteam/">Raid Team</a></li>
+							<li><a href="/join/">Join</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+					</div>
 				</div>
 
-				<div class="col-md-6 col-xs-12" id="nav-container">
-					<ul class="nav nav-pills">
-						<li><a href="/">Home</a></li>
-						<li class="active"><a href="/raidteam/">Raid Team</a></li>
-						<li><a href="/join/">Join</a></li>
-						<li><a href="/contact/">Contact</a></li>
-					</ul>
-				</div>
-			</div>
+				<div class="row" id="content">
+					<div class="row" id="raider-container">
+						<h1 class="text-center">Mythic Raid Team</h1>
+						<p class="text-justify">Fluffy Kitties is a guild that was established in 2014 with hopes of bringing in new and experienced players alike and giving them a community where connections and life long friendships could be made.</p>
+					</div>
+					<div class="container" id="fullscreen-container">
+						<div class="row" id="fullscreen-sub-container">
+							<div class="col-md-3 col-xs-12" id="fullscreen-description-container">
 
-			<div class="row" id="content">
-				<div class="row" id="raider-container">
-					<h1 class="text-center">Mythic Raid Team</h1>
-					<p class="text-justify">Fluffy Kitties is a guild that was established in 2014 with hopes of bringing in new and experienced players alike and giving them a community where connections and life long friendships could be made.</p>
-				</div>
-				<div class="container" id="fullscreen-container">
-					<div class="row" id="fullscreen-sub-container">
-						<div class="col-md-3 col-xs-12" id="fullscreen-description-container">
+								<h1 id="fullscreen-member-name"></h1>
+								<p class="text-justify" id="fullscreen-text-description"></p>
+								<div id="armory-button">
+									<a target="_blank" class="btn btn-link btn-xs btn-block">Armory</a>
+								</div>
 
-							<h1 id="fullscreen-member-name"></h1>
-							<p class="text-justify" id="fullscreen-text-description"></p>
-							<div id="armory-button">
-								<a target="_blank" class="btn btn-link btn-xs btn-block">Armory</a>
 							</div>
-
-						</div>
-						<div class="col-md-9 col-xs-12" id="fullscreen-image-container">
-							<img id="fullscreen-image">
+							<div class="col-md-9 col-xs-12" id="fullscreen-image-container">
+								<img id="fullscreen-image">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		
+			<footer>
+			<a href="/phpmumbleadmin/">Admin</a>
+			</footer>
+		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/js/fluffykitties.js"></script>
 	<script src="/js/guildmembers.js"></script>
