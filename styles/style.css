@@ -27,9 +27,9 @@ body {
 }
 
 footer {
+	display: none;
 	background-color: #f6a6c1;
 	position: absolute;
-	height: 36px;
     width: 100%;
     bottom: 0;
     text-align: right;
@@ -38,6 +38,16 @@ footer {
 
 footer a {
 	color: #f6a6c1;
+}
+
+@media (min-width: 768px) {
+	footer {
+		display: block;
+	}
+}
+
+a {
+	color: #e05993;
 }
 
 h1 {
@@ -49,9 +59,20 @@ p {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+ul {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 small {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+
+hr {
+	border-top: 1px solid #f6a6c1;
+	width: 80%;
+}
+
+
 
 
 
@@ -59,19 +80,19 @@ small {
 /*Class Colors*/
 
 .death-knight-color {
-	color: #EA9796;
+	color: #D95D61;
 }
 
 .death-knight-bg-color {
-	background-color: #EA9796;
+	background-color: #D95D61;
 }
 
 .druid-color {
-	color: #ECA775;
+	color: #F08A42;
 }
 
 .druid-bg-color {
-	background-color: #ECA775;
+	background-color: #F08A42;
 }
 
 .hunter-color {
@@ -152,9 +173,14 @@ small {
 
 #header {
 	background-color: #f6a6c1;
-	background-image: url("/images/headerbackground.png");
+	/*background-image: url("/images/headerbackground.png");*/
 	border: 4px solid #fbcfe2;
-	border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+	#header {
+		border-radius: 10px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -253,6 +279,24 @@ small {
 
 
 
+/* Footer Section */
+
+#social-media-footer {
+    text-align: center;
+    width: 100%;
+    bottom: 40px;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+	#social-media-footer {
+		position: absolute;
+		margin: 0;
+	}
+}
+
+
+
 /*Content Section */
 
 .wrapper {
@@ -264,24 +308,26 @@ small {
 }
 
 .container {
-	padding-bottom: 32px;
+	padding-bottom: 0px;
 }
 
 @media (min-width: 768px) {
 	#content {
-		margin: 20px 0;
+		margin: 20px 0 0 0;
+	}
+	.container {
+		padding-bottom: 80px;
 	}
 }
 
 @media (min-width: 992px) {
 	#content {
-		margin: 30px 20px;
+		margin: 20px;
 	}
 }
 
 .text-box {
 	border: 4px solid #f6a6c1;
-	border-radius: 10px;
 	background-color: #ffffff;
     padding: 20px 60px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -289,10 +335,18 @@ small {
 
 .table-box {
 	border: 4px solid #f6a6c1;
-	border-radius: 10px;
 	background-color: #ffffff;
     padding: 20px 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media (min-width: 768px) {
+	.text-box {
+		border-radius: 10px;
+	}
+	.table-box {
+		border-radius: 10px;
+	}
 }
 
 .table-responsive {
@@ -323,20 +377,33 @@ small {
 	background-size: cover;
 	background-position: center bottom;
 	border: 4px solid #f6a6c1;
-	border-radius: 10px;
+	height: 400px;
+}
+
+@media (min-width: 768px) {
+	#about-us-image-container {
+		border-radius: 10px;
+		height: auto;
+	}
 }
 
 
 /* Raid Team Page */
 
 #raider-container {
+	display: none;
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 20px;
 	border: 4px solid #f6a6c1;
-	border-radius: 10px;
 	background-color: #ffffff;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media (min-width: 768px) {
+	#raider-container {
+		border-radius: 10px;
+	}
 }
 
 .guild-member-portrait {
@@ -352,10 +419,12 @@ small {
 
 .guild-member-name {
 	position: absolute;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(255,255,255,.6);
 	background-clip: content-box;
+	text-shadow: 0 -2px 5px black, 2px 0 5px black, 0 2px 5px black, -2px 0 5px black;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.7em;
+	font-weight: bold;
 	margin: 20px;
 	bottom: 15px;
 	left: 0;
@@ -377,6 +446,7 @@ small {
 	width: 100%;
 	height: 100%;
 	padding: 0;
+	z-index: 1;
 }
 
 #fullscreen-sub-container {
@@ -387,11 +457,9 @@ small {
 
 #fullscreen-image-container {
 	padding: 20px 0 0 0;
-	display: none;
 }
 
 @media (min-width: 768px) {
-
 	#fullscreen-image-container {
 		display: initial;
 	}
@@ -422,8 +490,17 @@ small {
 	background-color: rgba(255,255,255,0.85);
 	color: black;
 	overflow-y: auto;
-	max-height: 70vh;
+	max-height: 60vh;
+	margin: 18px 0 0 0;
 }
+
+@media (min-width: 768px) {
+	#fullscreen-description-container {
+		max-height: 70vh;
+		margin: 0;
+	}
+}
+
 
 #fullscreen-member-name {
 	font-family: 'DJB Jacked Up Kinda Luv', cursive;
@@ -431,13 +508,17 @@ small {
 }
 
 #fullscreen-member-name small {
-	white-space: nowrap;
+	text-shadow: none;
 }
 
 #fullscreen-text-description {
 	font-size: 1.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
     padding: 10px 30px 0 30px;
+}
+
+#fullscreen-member-rank {
+	color: #f6a6c1;
 }
 
 #armory-button {
@@ -460,7 +541,15 @@ small {
 }
 
 #join-us-container {
-	padding: 0 0 0 0;
+	padding: 0;
+}
+
+#join-us-container ul {
+    font-size: 1.4em;
+}
+
+#join-us-container hr {
+	width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -481,6 +570,14 @@ small {
 	padding: 0;
 	}
 
+	#mythic-openings-container {
+		padding: 0;
+	}
+
+	#heroic-openings-container {
+		padding: 0;
+	}
+
 	#join-us-container {
 		padding: 0 20px;
 	}
@@ -497,42 +594,59 @@ small {
 	margin: 0 auto;
 	padding: 20px;
 	border: 4px solid #f6a6c1;
-	border-radius: 10px;
 	background-color: #ffffff;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+#social-media-container {
+	font-size: 2em;
+}
+
+#social-media-container ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#social-media-container li {
+	margin: 10px 0;
+}
+
+#social-media-container a {
+	margin-top: 40px;
+}
+
+#social-media-container img {
+	margin-right: 10px;
+}
+
 .contact-info-portrait {
 	position: relative;
-	width: 217px;
+	width: auto;
 	margin: 10px auto;
+	max-width: 302px;
+	min-width: 100px;
 }
 
 @media (min-width: 768px) {
-	.contact-info-portrait {
-		width: 221px;
-	}
 	#contact-us-thumbnail-container {
 		padding: 20px 100px;
+		border-radius: 10px;
+	}
+	.contact-info-portrait {
+		max-width: 216px;
 	}
 }
 
 @media (min-width: 992px) {
-	.contact-info-portrait {
-		width: 150px;
-	}
 	#contact-us-thumbnail-container {
 		padding: 20px 80px;
 	}
 	#contact-us-container {
-	padding: 0 20px 0 0;
+		padding: 0 20px 0 0;
 	}
 }
 
 @media (min-width: 1200px) {
-	.contact-info-portrait {
-		width: 150px;
-	}
 	#contact-us-thumbnail-container {
 		padding: 20px 50px;
 	}
@@ -557,7 +671,7 @@ small {
 }
 
 .contact-name {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	padding: 10px 0 0 0;
 	font-family: 'DJB Jacked Up Kinda Luv', cursive;
 }
@@ -576,9 +690,9 @@ small {
 	padding: 0;
 	}
 	.contact-rank {
-	font-size: .8em;
+	font-size: .7em;
 	}
 	.contact-realid {
-	font-size: .7em;
+	font-size: .6em;
 	}
 }

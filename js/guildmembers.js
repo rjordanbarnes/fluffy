@@ -31,7 +31,7 @@ function createDescription(data) {
 }
 
 function closeDescription(e) {
-	if ($(e.target).is('h1, small, p, #fullscreen-description-container, a, #armory-button')) {
+	if ($(e.target).is('h1, small, p, strong, li, center, #fullscreen-description-container, a, #armory-button')) {
 		// Do nothing
 	} else {
 		// Hide fullscreen description
@@ -46,6 +46,10 @@ var main = function() {
 			var portraitimage = createPortrait(data, i);
 			$("#raider-container p").before(portraitimage);
 		}
+
+		$("#raider-container").imagesLoaded(function() {
+			$("#raider-container").show();
+		});
 
 		// Create and Open the fullscreen description when thumbnail is clicked.
 		$(".guild-member-portrait, .guild-member-name").click(function() {
