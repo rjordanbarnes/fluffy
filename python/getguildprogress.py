@@ -20,7 +20,9 @@ data['progress'] = progress[0]
 
 logging.basicConfig(filename="logs/getguildprogress.log", level=logging.INFO)
 
-with open("../json/guildprogress.json", "w") as outputfile:
-    print(time.strftime("%b %d %Y %I:%M %p") + " - Refreshing progress... Now " + progress[0] + "/13")
-    logging.info(time.strftime("%b %d %Y %I:%M %p") + " - Refreshing progress... Now " + progress[0] + "/13")
+with open("../public_html/json/guildprogress.json", "w") as outputfile:
+    print(time.strftime("%b %d %Y %I:%M %p") +
+          " - Refreshing progress... Now " + progress[0] + "/13")
+    logging.info(time.strftime("%b %d %Y %I:%M %p") +
+                 " - Refreshing progress... Now " + progress[0] + "/13")
     json.dump(data, outputfile)

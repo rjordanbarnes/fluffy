@@ -3,7 +3,8 @@ import time
 import logging
 import csv
 
-# Create arrays that contain an object with guild openings and push it to their respective JSON files.
+# Create arrays that contain an object with guild openings
+# and push it to their respective JSON files.
 mythicopeningsarray = []
 heroicopeningsarray = []
 
@@ -24,14 +25,18 @@ data['openings'] = mythicopeningsarray
 
 logging.basicConfig(filename="logs/guildopenings.log", level=logging.INFO)
 
-with open("../json/openings-mythic.json", "w") as outputfile:
-    print(time.strftime("%b %d %Y %I:%M %p") + " - Pushing Mythic openings to JSON")
-    logging.info(time.strftime("%b %d %Y %I:%M %p") + " - Pushing Mythic openings to JSON")
+with open("../public_html/json/openings-mythic.json", "w") as outputfile:
+    print(time.strftime("%b %d %Y %I:%M %p") +
+          " - Pushing Mythic openings to JSON")
+    logging.info(time.strftime("%b %d %Y %I:%M %p") +
+                 " - Pushing Mythic openings to JSON")
     json.dump(data, outputfile)
 
 data['openings'] = heroicopeningsarray
 
-with open("../json/openings-heroic.json", "w") as outputfile:
-    print(time.strftime("%b %d %Y %I:%M %p") + " - Pushing Heroic openings to JSON")
-    logging.info(time.strftime("%b %d %Y %I:%M %p") + " - Pushing Heroic openings to JSON")
+with open("../public_html/json/openings-heroic.json", "w") as outputfile:
+    print(time.strftime("%b %d %Y %I:%M %p") +
+          " - Pushing Heroic openings to JSON")
+    logging.info(time.strftime("%b %d %Y %I:%M %p") +
+                 " - Pushing Heroic openings to JSON")
     json.dump(data, outputfile)
