@@ -1,6 +1,5 @@
 import json
 import time
-import logging
 import csv
 
 # Create arrays that contain an object with guild openings
@@ -23,13 +22,10 @@ with open('../openings-heroic.csv', newline='', encoding="utf-8-sig") as inputfi
 data = {}
 data['openings'] = mythicopeningsarray
 
-logging.basicConfig(filename="logs/guildopenings.log", level=logging.INFO)
 
 with open("../public_html/json/openings-mythic.json", "w") as outputfile:
     print(time.strftime("%b %d %Y %I:%M %p") +
           " - Pushing Mythic openings to JSON")
-    logging.info(time.strftime("%b %d %Y %I:%M %p") +
-                 " - Pushing Mythic openings to JSON")
     json.dump(data, outputfile)
 
 data['openings'] = heroicopeningsarray
@@ -37,6 +33,4 @@ data['openings'] = heroicopeningsarray
 with open("../public_html/json/openings-heroic.json", "w") as outputfile:
     print(time.strftime("%b %d %Y %I:%M %p") +
           " - Pushing Heroic openings to JSON")
-    logging.info(time.strftime("%b %d %Y %I:%M %p") +
-                 " - Pushing Heroic openings to JSON")
     json.dump(data, outputfile)

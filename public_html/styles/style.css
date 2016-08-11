@@ -87,6 +87,14 @@ hr {
 	background-color: #D95D61;
 }
 
+.demon-hunter-color {
+	color: #E5B3FF;
+}
+
+.demon-hunter-bg-color {
+	background-color: #E5B3FF;
+}
+
 .druid-color {
 	color: #F08A42;
 }
@@ -406,6 +414,10 @@ hr {
 	}
 }
 
+#raider-container p {
+	padding: 0 15px;
+}
+
 .guild-member-portrait {
 	width: 100%;
 	height: 100%;
@@ -550,6 +562,14 @@ hr {
 
 #join-us-container hr {
 	width: 100%;
+}
+
+#mythic-table {
+	margin-top: 30px;
+}
+
+#heroic-table {
+	margin-top: 30px;
 }
 
 @media (min-width: 768px) {

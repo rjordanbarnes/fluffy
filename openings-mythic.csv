@@ -1,11 +1,12 @@
-Death Knight,DPS
-Druid,---
-Hunter,---
-Mage,---
-Monk,---
-Paladin,Heals
-Priest,---
-Rogue,---
-Shaman,---
-Warlock,---
-Warrior,---
+Death Knight,Open
+Demon Hunter,Open
+Druid,"Tank, Ranged"
+Hunter,Open
+Mage,Open
+Monk,Open
+Paladin,Open
+Priest,Open
+Rogue,Open
+Shaman,Heals
+Warlock,Open
+Warrior,Open

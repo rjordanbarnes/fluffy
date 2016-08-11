@@ -1,11 +1,12 @@
-Death Knight,Open
-Druid,Open
-Hunter,Open
+Death Knight,---
+Demon Hunter,---
+Druid,"Ranged, Heals"
+Hunter,Ranged
 Mage,Open
-Monk,Open
-Paladin,Open
+Monk,Heals
+Paladin,Heals
 Priest,Open
-Rogue,Open
-Shaman,Open
+Rogue,---
+Shaman,"Ranged, Heals"
 Warlock,Open
-Warrior,Open
+Warrior,DPS
