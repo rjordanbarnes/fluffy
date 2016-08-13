@@ -1,12 +1,12 @@
 Death Knight,Open
-Demon Hunter,Open
+Demon Hunter,---
 Druid,"Tank, Ranged"
-Hunter,Open
+Hunter,Ranged
 Mage,Open
-Monk,Open
-Paladin,Open
+Monk,DPS
+Paladin,Heals
 Priest,Open
 Rogue,Open
 Shaman,Heals
 Warlock,Open
-Warrior,Open
+Warrior,DPS

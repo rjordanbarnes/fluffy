@@ -552,6 +552,10 @@ hr {
 	font-weight: bold;
 }
 
+.schedule-times {
+	font-size: 1.4em;
+}
+
 #join-us-container {
 	padding: 0;
 }
@@ -562,6 +566,10 @@ hr {
 
 #join-us-container hr {
 	width: 100%;
+}
+
+#schedule-container {
+	margin-bottom: 30px;
 }
 
 #mythic-table {
