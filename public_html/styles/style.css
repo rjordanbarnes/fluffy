@@ -321,7 +321,7 @@ hr {
 
 @media (min-width: 768px) {
 	#content {
-		margin: 20px 0 0 0;
+		margin: 20px 0;
 	}
 	.container {
 		padding-bottom: 80px;
@@ -552,16 +552,12 @@ hr {
 	font-weight: bold;
 }
 
-.schedule-times {
-	font-size: 1.4em;
-}
-
 #join-us-container {
 	padding: 0;
 }
 
 #join-us-container ul {
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 #join-us-container hr {
@@ -576,38 +572,15 @@ hr {
 	margin-top: 30px;
 }
 
-#heroic-table {
-	margin-top: 30px;
-}
-
 @media (min-width: 768px) {
-	#mythic-openings-container {
-		padding: 0 10px 0 0;
-	}
-
-	#heroic-openings-container {
-		padding: 0 0 0 10px;
-	}
 	#join-us-container {
-		padding: 0 0 20px 0;
+		padding: 0 0 0 20px;
 	}
 }
 
 @media (min-width: 992px) {
 	.openings-container {
 	padding: 0;
-	}
-
-	#mythic-openings-container {
-		padding: 0;
-	}
-
-	#heroic-openings-container {
-		padding: 0;
-	}
-
-	#join-us-container {
-		padding: 0 20px;
 	}
 }
 
@@ -659,6 +632,9 @@ hr {
 	#contact-us-thumbnail-container {
 		padding: 20px 100px;
 		border-radius: 10px;
+	}
+	#contact-us-container {
+		padding: 0 0 20px 0;
 	}
 	.contact-info-portrait {
 		max-width: 216px;

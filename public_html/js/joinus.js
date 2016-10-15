@@ -14,14 +14,6 @@ var main = function() {
             $("#mythic-table").append(tableRow);
         }
     });
-
-    $.getJSON("/json/openings-heroic.json", function(data) {
-        // Get data from openings-heroic.json and build table.
-        for (i = 0; i < data.openings.length; i++) {
-            var tableRow = createTableRow(data, i);
-            $("#heroic-table").append(tableRow);
-        }
-    });
 };
 
 $(document).ready(main);
