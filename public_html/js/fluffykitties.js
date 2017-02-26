@@ -1,5 +1,4 @@
 function updateContainer() {
-	console.log($('html').css('max-width'));
 	if (window.matchMedia('(min-width: 768px)').matches) {
 		$("#about-us-image-container").height($("#about-us-container").height() - 8);
 	}
